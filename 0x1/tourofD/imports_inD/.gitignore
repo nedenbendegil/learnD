@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/imports_ind
+imports_ind.so
+imports_ind.dylib
+imports_ind.dll
+imports_ind.a
+imports_ind.lib
+imports_ind-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

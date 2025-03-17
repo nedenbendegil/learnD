@@ -7,3 +7,7 @@ my first codes yey
 ``[1]`` dub creates .exe and accepts only one main
 
 ``[2]`` if you wanna call a func from another file import sec.d as `import sec;`
+
+``[3]`` if your imports are in the same dir as you are working you must import by only xxx.d name
+
+``[4]`` if you have aa.d with func aa you must import it as aa : aa or it gives error
