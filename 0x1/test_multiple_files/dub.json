@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"I love catz and my gf"
+	],
+	"copyright": "Copyright © 2025, I love catz and my gf",
+	"description": "What if I use multiple sources, will dub build an exe?",
+	"license": "MIT",
+	"name": "test_multiple_files"
+}

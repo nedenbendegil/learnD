@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/test_multiple_files
+test_multiple_files.so
+test_multiple_files.dylib
+test_multiple_files.dll
+test_multiple_files.a
+test_multiple_files.lib
+test_multiple_files-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
