@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"yineben"
+	],
+	"copyright": "Copyright © 2025, yineben",
+	"description": "A minimal D application.",
+	"license": "MIT",
+	"name": "src"
+}

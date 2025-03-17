@@ -58,3 +58,34 @@ In D, indexes usually have the alias type `size_t`, as it is a type that is LARG
 D uses a garbage collector by default.
 
 just look at the code in `memory_inD` to understand better.
+
+``[8]`` Statical typing
+
+D is a statically typed language, when you create a variable you can not change the type later.
+
+This allows the compiler to prevetn some bugs from occuring. There are several type qualifiers in D but most commonly used are const and immutable.
+
+``immutable``: when such an object is created it can never be changed again.
+
+example:
+
+immutable int err = 5; (or immutable err = 5 and int is assigned auto)
+
+err = 5; WILL NOT COMPILE
+
+another thing that you will notice is that you can not send an immutable obj to a mutable thing. such as notallowed.d in mutability in d folder
+
+
+void malicious(char[] s) {
+    s[0] = 'X';  // This would modify supposedly immutable data!
+}
+
+void main() {
+    string immutableStr = "hello";
+    malicious(immutableStr);  // If this were allowed, it would break immutability
+}
+
+------------------------------
+
+
+const manipulation: see the constManipulation.d
