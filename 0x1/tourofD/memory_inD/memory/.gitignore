@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/memory
+memory.so
+memory.dylib
+memory.dll
+memory.a
+memory.lib
+memory-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

@@ -50,3 +50,11 @@ Floating points types also have `.nan` `.infinity` `.dig` (number of decimal dig
 In D, indexes usually have the alias type `size_t`, as it is a type that is LARGE ENOUGH to represent an offset into all addressable memory. That is `uint` for 32 bit and `ulong` for 64 bit systems.
 
 `Assert expression`: `assert` is an expression which verifies conditions in debug mode and aborts with 'AssertionError' if it fails. `assert(0)` thus is used to mark unreachable code.
+
+
+
+``[7]`` Garbage collector in D
+
+D uses a garbage collector by default.
+
+just look at the code in `memory_inD` to understand better.
