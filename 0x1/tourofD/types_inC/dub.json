@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"kedy"
+	],
+	"copyright": "Copyright © 2025, kedy",
+	"description": "Types in D",
+	"license": "MIT",
+	"name": "types_inc"
+}

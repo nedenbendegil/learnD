@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/types_inc
+types_inc.so
+types_inc.dylib
+types_inc.dll
+types_inc.a
+types_inc.lib
+types_inc-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
