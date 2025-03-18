@@ -87,6 +87,7 @@ void main() {
 
 ------------------------------
 
-TODO: more on mutable immutable pointers immutable(int)* vs others etc etc
 
 const manipulation: see the constManipulation.d
+
+see the mutpointers for more on immutable / mutable pointers 
