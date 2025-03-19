@@ -14,6 +14,20 @@ void main() @trusted
     q = null; // works without a problem
     // *q = 50; this throws an error
     // mutable pointer immutable value
-    // TODO add the other later
     
+    int* immutable r = new int(110);
+    // the pointer can not point to anywhere else
+    // the int can not be changed
+    r = null; // gives error
+    *r = 10; // is OK
+
+    immutable(int*) s = new int(424);
+    // the pointher can not point to anywhere else
+    // the int can be chagned
+    s = null; // gives an error
+    *s = 10; // ok
+
+    // in short you can also write
+    immutable ss = new int(505);
+    // botht he pointer (ss) and the int created (*s) is immutable
 }
