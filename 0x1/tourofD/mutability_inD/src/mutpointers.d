@@ -30,4 +30,27 @@ void main() @trusted
     // in short you can also write
     immutable ss = new int(505);
     // botht he pointer (ss) and the int created (*s) is immutable
+
+
+    // MORE EXAMPLES BELOW
+
+    immutable apple = new int(999);
+    // apple = null NOT ALLOWED
+    // *apple = 234234 NOT ALLOWED
+    
+    immutable(int*) orange = new int(223);
+    orange = null; // OK
+    // *orange = 124123 NOT OK
+
+    int bbb = 5;
+    int* immutable ahhh = &bbb;
+    // ahhh = null NOT OK
+    *ahhh = 1234;
+
+    int yyy = 23;
+    immutable (int*) ohno = &yyy;
+    // ohno = null NOT OK
+    *ohno = 32; // THIS IS OOK
+
+    // AS YOU CAN SEE THE ABOVE TWO EXAMPLES ARE THE SAME
 }
