@@ -81,3 +81,20 @@ this means that whatevver type of class calls me, paste its type and create an i
 also create a function using typeof that class, for creating its own instance (actually initializing i guess, since it was created alrd)  
 
 so yeah that is it pretty much
+
+
+## `[4]` arrays and slices
+
+
+so uhh nothing fancy in array.
+
+you can kinda use slices like in pyhton though
+
+
+int[] slice = arr[1..4];  // Elements from index 1 to 3
+
+there are vector operations
+
+all in the code, i have added dirs for them
+
+slices are a little bit more troublesome though
