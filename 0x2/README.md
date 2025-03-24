@@ -97,4 +97,36 @@ there are vector operations
 
 all in the code, i have added dirs for them
 
-slices are a little bit more troublesome though
+slices are a little bit more interesting though
+
+
+A slice consists of two parts:
+
+A pointer (T* ptr) to the first element of the array
+A length value (size_t length) indicating how many elements the slice contains
+
+// Create a new array of 5 integers
+auto arr = new int[5];
+assert(arr.length == 5);
+
+// The arr variable is actually a slice pointing to those 5 integers
+// arr.ptr points to the first element
+// arr.length is 5
+
+
+
+You can create a slice that references a portion of existing memory using the slicing operator [start .. end]:
+
+int[] originalArray = [10, 20, 30, 40, 50];
+
+// Create a slice of elements from index 1 to 3 (not including 4)
+int[] newSlice = originalArray[1 .. 4];
+
+// newSlice now contains [20, 30, 40]
+assert(newSlice.length == 3);
+
+// Important: changing elements in the slice changes the original array!
+newSlice[0] = 99;
+assert(originalArray[1] == 99); // originalArray is now [10, 99, 30, 40, 50]
+
+
